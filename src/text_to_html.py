@@ -10,7 +10,7 @@ class TextToHTMLConverter:
         match text_type:
             case TextType.bold:
                 return LeafNode(value=text_node.text, tag="b")
-            case TextType.normal:
+            case TextType.text:
                 return LeafNode(value=text_node.text)
             case TextType.italic:
                 return LeafNode(value=text_node.text, tag="i")

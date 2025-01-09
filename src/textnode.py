@@ -2,12 +2,12 @@ from enum import Enum
 
 
 class TextType(Enum):
-    normal = "normal"
     bold = "bold"
     italic = "italic"
     code = "code"
     links = "links"
     images = "images"
+    text = "text"
 
 
 class TextTypeEnumException(Exception):

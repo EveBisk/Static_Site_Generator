@@ -15,7 +15,7 @@ class TextToHTMLConverterTest(TestCase):
         self.assertEqual(expected_leaf_node, actual_leaf_node)
 
     def test_normal_converts_successfully(self):
-        node = TextNode(self.default_text, TextType.normal)
+        node = TextNode(self.default_text, TextType.text)
         expected_leaf_node = LeafNode(self.default_text)
         actual_leaf_node = TextToHTMLConverter.text_node_to_html_node(node)
 
